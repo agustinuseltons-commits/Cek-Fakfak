@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data — Cek Fakfak</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="site" href="index.html">Cek <em>Fakfak</em></a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="seri.html">Seri</a>
+      <a href="data.html" aria-current="page">Data</a>
+      <a href="metode.html">Metode</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <h1>Data</h1>
+  <p>Dataset yang dipakai dalam seri ini, sudah dibersihkan dan disusun ulang dari sumber publik. Setiap file CSV memuat kolom <code>sumber</code> dan <code>tanggal_akses</code>. Silakan diunduh, diperiksa, dan dipakai ulang — dengan menyebut sumber aslinya (BPS, Pemkab, BPK), bukan situs ini.</p>
+
+  <table>
+    <thead>
+      <tr><th>Dataset</th><th>Cakupan</th><th>Sumber asli</th><th>Diperbarui</th><th>Unduh</th></tr>
+    </thead>
+    <tbody>
+      <!-- Tambahkan baris baru di sini -->
+      <tr>
+        <td>[nama dataset]</td>
+        <td>[tahun/distrik]</td>
+        <td><a href="[tautan BPS/Pemkab]">[nama publikasi]</a></td>
+        <td>[tanggal]</td>
+        <td><a href="data/[nama-file].csv">CSV</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Konvensi file</h2>
+  <ul>
+    <li>Nama file: <code>topik_cakupan_tahunawal-tahunakhir.csv</code>, misalnya <code>penduduk_distrik_2018-2025.csv</code>.</li>
+    <li>Satu baris = satu observasi (satu distrik-tahun, satu urusan-tahun). Tidak ada baris total di dalam data; total dihitung saat dipakai.</li>
+    <li>Angka ditulis apa adanya dari sumber, tanpa pembulatan. Nilai yang tidak tersedia ditulis kosong, bukan nol.</li>
+    <li>Kolom wajib: <code>sumber</code> (judul publikasi + nomor tabel), <code>tautan</code>, <code>tanggal_akses</code>, <code>catatan</code>.</li>
+    <li>Perubahan pada file yang sudah terbit dicatat di <code>data/CHANGELOG.md</code>.</li>
+  </ul>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Data boleh dipakai ulang dengan menyebut sumber aslinya.</span>
+    <span>Koreksi dan pertanyaan: [email Anda]</span>
+  </div>
+</footer>
+</body>
+</html>
